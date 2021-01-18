@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Roboto'), local('Roboto-Regular'), url(../font/roboto.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+  }
+
+  body{
+    font-size: .24rem;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto';
+  }
+
+  /* 主色 */
+  .main-color{
+    color:#E34B3F
+  }
+
+  /* 字体颜色 */
+  .font-color{
+    columns: #222222;
+  }
+
+
+  .detail .content{
+    text-align:center;
+  }
+  .detail .content img{
+    width:100%;
+  }
+
+
+  .shopCar .van-checkbox__icon--checked .van-icon,
+  .confirmOrder .van-radio__icon--checked .van-icon{
+    background-color: #E34B3F;
+    border-color: #E34B3F;
+  }
+  .shopCar .van-stepper__minus, .shopCar .van-stepper__plus, .shopCar .van-stepper__input{
+    width:21px;
+    height: 21px;
+}
+
+.shopCar .van-button--danger{
+  background-color: #e34b3f;
+  border: 1px solid #e34b3f;
+  height:40px;
+  line-height: 30px;
+  margin-right:10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+.shopCar .van-submit-bar__text{
+  margin-bottom:7px;
+  color: #676867;
+  font-weight: normal
+}
+.shopCar .van-submit-bar__bar .van-checkbox{
+  margin-bottom:5px;
+}
+.shopCar .van-submit-bar__bar .van-checkbox .van-checkbox__label{
+  color: #676867;
+}
+
+
+/* 路由动效 */
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}
+
+.bounce-enter-active {
+  animation: bounce-in .8s;
+}
+.bounce-leave-active {
+  animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+  0% { transform: scale(0) }
+  50% { transform: scale(1.5) }
+  100% { transform: scale(1) }
+}
+@keyframes bounce-out {
+  0% { transform: scale(1) }
+  50% { transform: scale(1.5) }
+  100% { transform: scale(0) }
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(30px, 0);
+}
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-30px, 0);
+}

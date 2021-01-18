@@ -1,0 +1,25 @@
+.reg{
+  .inputGroud{
+      padding-left:.55rem;
+      padding-right:.55rem;
+      li{
+          margin-top:.85rem;
+          border-bottom:#D8D8D8 1px solid;
+          font-size:.3rem;
+          .van-cell{
+              padding-left:0;
+              padding-right:0;
+              padding-top:0;
+          }
+      }
+  }
+  .regBtn{
+      text-align:center;
+      margin-top:1.67rem;
+      button{
+          width:70%;
+          font-size:.4rem;
+          background: #FC384F;
+      }
+  }
+}

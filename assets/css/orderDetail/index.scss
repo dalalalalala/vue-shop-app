@@ -1,0 +1,148 @@
+
+$grayColor :#5D5D5D;
+.fixBottom{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width:100%;
+    height: 1rem;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: #5D5D5D 2px 2px ;
+    &>*{
+        border-radius: .3rem;
+        padding:.1rem .5rem;
+        display: inline-block;
+        margin-top:.2rem;
+    }
+    :nth-child(1){
+        color: #7F7F7F;
+        border: #7F7F7F 1px  solid;
+
+    }
+    :nth-child(2){
+        color:#FFFFFF;
+        background: #E63837;
+    }
+}
+
+
+.orderSuccess{
+    .status{
+        background: url(../static/imgs/orderDetail/bg_orderStatus.jpg) no-repeat ;
+        height: 2rem;
+        color: #ffffff;
+        line-height: 2rem;
+        padding-left:.2rem;
+        vertical-align: middle;
+        font-size: .3rem;
+        img{
+            width:20px;
+            padding-bottom: 3px;
+            vertical-align: middle
+        }
+        p{
+            display: inline-block;
+        }
+    }
+    .address{
+        p:nth-child(1){
+            font-size: .3rem;
+        }
+        p:nth-child(2){
+            color:#626262;
+            margin-top:.15rem;
+        }
+        p{
+            vertical-align: middle;
+            img{
+                height:.3rem;
+                vertical-align: top;
+            }
+        }
+        padding:.33rem;
+        background-color:  #FFFFFF;
+    }
+    .price{
+            padding:.7rem 0;
+            color:#F53D5A;
+            text-align: center;
+
+            p:nth-child(1){
+                font-size:.36rem;
+                margin-right: .2rem;
+            }
+
+            p:nth-child(2){
+                color:$grayColor
+            }
+            background: #FFFFFF;
+    }
+    .goodsList{
+        margin-top:.2rem;
+        background: #FFFFFF;
+        color:#222323;
+        &{
+            padding:0 .2rem;
+        }
+        &>*{
+            border-top: #EBEAEA 1px solid;
+            padding:.2rem;
+        }
+        .title{
+            :nth-child(1){
+                vertical-align: middle;
+                img{
+                    vertical-align: top;
+                    height: .3rem;
+                }
+            }
+            :nth-child(2){
+                text-align: right;
+                color: #646464;
+                span{
+                    color:#E34B3F;
+                }
+            }
+        }
+        .list{
+            .goodsImg{
+                text-align: center
+            }
+            :nth-child(3){
+                text-align: right
+            }
+            img{
+                width:50px;
+                border: #ccc 1px solid;
+
+            }
+            .num{
+                color:#222323;
+                margin-top:.1rem;
+                font-size: 8px;
+            }
+            h4{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                word-break: break-all;
+            }
+        }
+        .amount{
+            :nth-child(2){
+                text-align: right
+            }
+        }
+        .freight{
+            :nth-child(2){
+                text-align: right
+            }
+            border-bottom: #EBEAEA 1px solid;
+        }
+    }
+    .van-icon{
+        vertical-align: middle;
+        padding-bottom: 2.2px;
+    }
+}
